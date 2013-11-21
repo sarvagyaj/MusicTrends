@@ -10,7 +10,6 @@ import datetime
 trackrepository = {}
 eracategorytrack = {}
 
-# Create a Dictionary with artistId as the key and list of artist ratings as the values 
 for line in sys.stdin:	
   line = line.strip()
   category, trackid  = line.split(",")
@@ -29,6 +28,7 @@ c=conn.cursor()
 q = "select era, track_id from songs where era!=0 order by era"
 c.execute(q)
 rows = c.fetchall()
+
 for row in rows:
   key = row[0] + "," + trackrepository[row[1]]
   if(eracategorytrack.has_key(key)):
