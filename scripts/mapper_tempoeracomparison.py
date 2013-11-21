@@ -31,7 +31,7 @@ def sort_bubble(tempo):
 
 
 def main():
-    # input comes from STDIN (standard input)
+    # input comes from STDIN (standard input) and theen prints the values of trackid and the category of track's tempo 
     data = read_input(sys.stdin)
     for trackid, tempo in data:
       tempo = float(tempo)
