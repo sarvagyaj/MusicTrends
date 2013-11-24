@@ -45,11 +45,6 @@ for row in rows:
 #print era , category and the No of tracks in the particular era and category
 for key in eracategorytrack:
   	era, category = key.split(',')
-	trackidsample = eracategorytrack[key]
-	trackids = str(trackidsample)
-	trackids = trackids.strip('[]')
-	trackids = trackids.replace('u'', '')
-	trackids = trackids.replace('\'', '')
 	print "%s\t%s\t%s" %(era, category, len(eracategorytrack[key]))
 
   

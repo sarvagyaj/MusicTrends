@@ -48,7 +48,7 @@ for key in eracategorytrack:
 	trackidsample = eracategorytrack[key]
 	trackids = str(trackidsample)
 	trackids = trackids.strip('[]')
-	trackids = trackids.replace('u'', '')
+	trackids = trackids.replace('u\'', '')
 	trackids = trackids.replace('\'', '')
 	print "%s\t%s\t%s" %(era, category, len(eracategorytrack[key]))
 
