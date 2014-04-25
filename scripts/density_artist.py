@@ -10,7 +10,8 @@ from nltk import stem
 import re
 
 # if YIELD_ALL is true, we yield all densities, otherwise,
-# we yield just the extremes
+# we yield  the extreme values
+
 
 YIELD_ALL = True
 
